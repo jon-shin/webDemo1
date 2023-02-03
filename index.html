@@ -1,15 +1,44 @@
 <html>
     <head>
-        <title>My Website</title>
+        <title>Ice Cream Shop</title>
         <link rel = "stylesheet" href="main.css"/>
     </head>
     <body>
         <h1>HELLO</h1>
-        <p>This is my first webpage</p>
+        <p>Welcome to the Ice Cream Shop!</p>
         <button onclick = myFunction()>Click This!</button>
+        <br>
         <div class = myClass>
-            <a href = "https://www.youtube.com">Watch youtube</a>
+            <a href = "https://www.wikipedia.org/wiki/ice_cream">Learn more about ice cream</a>
         </div>
+        <br>
+        <select name= "iceCream" id="iceCream" onchange="iceCream()">
+            <option selected disabled hidden>Choose flavor</option>
+            <option value = "vanilla">Vanilla</option>
+            <option value = "chocolate">Chocolate</option>
+            <option value = "strawberry">Strawberry</option>
+            <option value = "mint">Mint</option>
+        </select>
+        <br><br>
+        <p>Select Toppings:</p>
+        <div id = "toppings">
+            <input type = "checkbox" id = "sprinkles" name = "sprinkles" value = "sprinkles">
+            <label for= "sprinkles">Sprinkles</label><br>
+            <input type = "checkbox" id = "hot fudge" name = "hot fudge" value = "hot fudge">
+            <label for= "hot fudge">Hot Fudge</label><br>
+            <input type = "checkbox" id = "peanuts" name = "peanuts" value = "peanuts">
+            <label for= "peanuts">Peanuts</label><br>
+            <input type = "checkbox" id = "chocolate chips" name = "chocolate chips" value = "chocolate chips">
+            <label for= "chocolate chips">Chocolate Chips</label><br>
+        </div>
+        <br>
+        <div id = "pay">
+            <button onclick=finishAndPay()>Finish and Pay</button>
+        </div>
+        <br>
+        <div class = circle id="circle"></div>
+        <br>
+        <div class = cone id="cone"></div>
     </body>
     <script src = "app.js"></script>
 </html>

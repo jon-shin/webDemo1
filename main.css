@@ -1,9 +1,28 @@
 body{
     text-align: center;
-    background-color: pink;
+    background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .myClass{
     font-family:'Times New Roman', Times, serif;
+}
+
+div.circle{
+    height: 120px;
+    width: 120px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+div.cone{
+    width: 0; 
+    height: 0; 
+    
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    
+    border-top: 100px solid burlywood;
+    display: inline-block;
 }
