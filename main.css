@@ -1,0 +1,9 @@
+body{
+    text-align: center;
+    background-color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.myClass{
+    font-family:'Times New Roman', Times, serif;
+}
